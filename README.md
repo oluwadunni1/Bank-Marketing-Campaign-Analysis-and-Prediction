@@ -29,10 +29,9 @@ This project analyzes bank marketing campaign data from a Kaggle competition to 
 ###  Model Diagnostics and Interpretability
 
 ####  Confusion Matrix (XGBoost)
-Displays model performance in terms of correctly and incorrectly classified customers (Threshold = 0.75).
+This plot shows how well the model distinguishes between positive and negative classes.
 
-![Confusion Matrix](images/confusion_matrix_xgb.png)
-
+![Confusion Matrix](plots/confusion_matrix.png)
 #### Top 15 Feature Importances
 Shows the most influential customer attributes driving subscription predictions.
 
