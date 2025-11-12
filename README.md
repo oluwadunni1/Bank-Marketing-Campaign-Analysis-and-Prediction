@@ -15,13 +15,13 @@ This project analyzes bank marketing campaign data from a Kaggle competition to 
 
 ##  Results
 
-### Cross-Validation Performance
+### Performance Summary
 
 | Model | ROC-AUC | Precision | Recall | F1-Score |
 |-------|---------|-----------|------|----------|
-| Logistic Regression |0.9446| 0.95 | X.XX | X.XX |
-| XGBoost | **X.XX** | **X.XX** | **X.XX** | **X.XX** |
-| Neural Network | X.XX | X.XX | X.XX | X.XX |
+| Logistic Regression |0.9446| 0.60 | 0.70 |0.65 |
+| XGBoost | **0.9665** | **0.68** | **0.79** | **0.73** |
+| Neural Network | 0.9611 | 0.67 | 0.77 | 0.71 |
 
 
 **Winner**: XGBoost demonstrated superior performance across all metrics, achieving a **0.96 ROC-AUC score** on Kaggle's held-out test set, demonstrating excellent generalization capability.
