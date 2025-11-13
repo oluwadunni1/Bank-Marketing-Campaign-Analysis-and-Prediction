@@ -44,18 +44,6 @@ Call duration emerged as the strongest predictor of term deposit subscription, w
 ##  Project Structure
 ```
 bank-marketing-prediction/
-│
-├── data/
-│   ├── raw/                          # Original datasets
-│   │   ├── train.csv
-│   │   └── test.csv
-│   └── processed/                    # Preprocessed datasets
-│       ├── X_train_nn.pkl            # For gradient based models
-│       ├── X_test_nn.pkl            
-│       ├── X_train_xgb.pkl           # For tree-based models
-│       ├── X_test_xgb.pkl
-|       ├── y_train.pkl
-|       └── y_test.pkl
 ├── Models/                           # Trained model artifacts
 │   ├── logistic_regression.pkl
 │   ├── xgboost_model.pkl
@@ -64,7 +52,6 @@ bank-marketing-prediction/
 ├── transformers/                     # Fitted preprocessing transformers
 │   ├── nn_yeo_johnson_transformer.pkl
 │   ├── xgb_yeo_johnson_transformer.pkl
-│   ├── encoder.pkl
 │   └── README.md                     # Documentation for transformers
 │
 ├── notebooks/
@@ -75,7 +62,7 @@ bank-marketing-prediction/
 ├── predictions/                      # Competition submissions
 │   ├── preds_xgb.csv
 |   ├── preds_nn.csv
-|   └── preds_logreg.csv
+|   ├── preds_logreg.csv
 │   └── submission_log.md             # Track submission scores
 │
 ├── plots/                            # Visualizations
