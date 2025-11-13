@@ -6,8 +6,6 @@ Predicting customer subscription to bank term deposits using machine learning
 
 This project analyzes bank marketing campaign data from a Kaggle competition to predict whether customers will subscribe to a term deposit. The analysis includes comprehensive exploratory data analysis, statistical testing, custom preprocessing pipelines for different model types, and comparative evaluation of multiple machine learning models.
 
-**Competition Result**: Achieved **0.96 ROC-AUC score** on Kaggle's held-out test set using the optimized XGBoost model. 
-
 ## Dataset
 
 - **Source**: [Kaggle - Bank Marketing Dataset](https://www.kaggle.com/competitions/playground-series-s5e8/overview)
@@ -24,7 +22,7 @@ This project analyzes bank marketing campaign data from a Kaggle competition to 
 | Neural Network | 0.9611 | 0.67 | 0.77 | 0.71 |
 
 
-**Winner**: XGBoost demonstrated superior performance across all metrics, achieving a **0.96 ROC-AUC score** on Kaggle's held-out test set, demonstrating excellent generalization capability.
+**XGBoost** demonstrated superior performance across all metrics, achieving a **0.96 ROC-AUC score** on Kaggle's held-out test set, demonstrating excellent generalization capability.
 
 ###  Model Diagnostics and Interpretability
 
@@ -59,9 +57,9 @@ bank-marketing-prediction/
 │   └── README.md                     # Documentation for encoders
 │
 ├── notebooks/
-│   ├── 01_exploratory_data_analysis.ipynb
+│   ├── 01_eda.ipynb
 │   ├── 02_data_preprocessing.ipynb
-│   └── 03_model_training_evaluation.ipynb
+│   └── 03_model.ipynb
 │
 ├── scalers/                          # Scalers used in preprocessing
 │   └── nn_standard_scaler.pkl
@@ -93,8 +91,10 @@ git clone https://github.com/oluwadunni1/Bank-Marketing-Campaign-Analysis-and-Pr
 cd Bank-Marketing-Campaign-Analysis-and-Prediction
 
 ```
-2. **Download the dataset**. The dataset is available on [Kaggle](https://www.kaggle.com/competitions/playground-series-s5e8/overview). Download the CSV files (train.csv and test.csv) manually.
-3. **Place the dataset**. Ensure the dataset files are placed in the following folder structure
+2. **Download the dataset**
+
+   The dataset is available on [Kaggle](https://www.kaggle.com/competitions/playground-series-s5e8/overview). Download the CSV files (train.csv and test.csv) manually.
+4. **Place the dataset**. Ensure the dataset files are placed in the following folder structure
 ```
     bank-marketing-prediction/
 └── data/
@@ -116,3 +116,5 @@ notebooks/data_preprocessing.ipynb – Apply feature engineering, encoding, scal
 
 - Model Training & Evaluation:
 notebooks/model_training_evaluation.ipynb – Train the models, evaluate performance, and save trained artifacts.
+
+5. **Run Inference Script (Optional)** After training the models, you can generate predictions on the test dataset using the inference script. Alternatively, you may use the pre-trained models provided in the Models/ folder to run inference directly without retraining.
