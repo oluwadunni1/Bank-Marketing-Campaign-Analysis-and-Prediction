@@ -56,14 +56,14 @@ bank-marketing-prediction/
 │       ├── X_test_xgb.pkl
 |       ├── y_train.pkl
 |       └── y_test.pkl
-├── models/                           # Trained model artifacts
+├── Models/                           # Trained model artifacts
 │   ├── logistic_regression.pkl
 │   ├── xgboost_model.pkl
 │   └── neural_network.pkl
 │
 ├── transformers/                     # Fitted preprocessing transformers
-│   ├── yeo_johnson_transformer.pkl
-│   ├── scaler.pkl
+│   ├── nn_yeo_johnson_transformer.pkl
+│   ├── xgb_yeo_johnson_transformer.pkl
 │   ├── encoder.pkl
 │   └── README.md                     # Documentation for transformers
 │
@@ -72,8 +72,10 @@ bank-marketing-prediction/
 │   ├── 02_data_preprocessing.ipynb
 │   └── 03_model_training_evaluation.ipynb
 │
-├── submissions/                      # Competition submissions
-│   ├── xgboost_predictions.csv
+├── predictions/                      # Competition submissions
+│   ├── preds_xgb.csv
+|   ├── preds_nn.csv
+|   └── preds_logreg.csv
 │   └── submission_log.md             # Track submission scores
 │
 ├── plots/                            # Visualizations
