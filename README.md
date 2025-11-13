@@ -49,23 +49,38 @@ bank-marketing-prediction/
 │   ├── xgboost_model.pkl
 │   └── neural_network.pkl
 │
-├── transformers/                     # Fitted preprocessing transformers
-│   ├── nn_yeo_johnson_transformer.pkl
-│   ├── xgb_yeo_johnson_transformer.pkl
-│   └── README.md                     # Documentation for transformers
+├── Plots/                            # Visualizations
+│   ├── confusion_matrix.png
+│   └── feature_importance.png
+│
+├── encoders/                         # Encoders used in preprocessing
+│   ├── nn_onehot_encoder.pkl
+│   ├── xgb_ordinal_encoder.pkl
+│   └── README.md                     # Documentation for encoders
 │
 ├── notebooks/
 │   ├── 01_exploratory_data_analysis.ipynb
 │   ├── 02_data_preprocessing.ipynb
 │   └── 03_model_training_evaluation.ipynb
 │
+├── scalers/                          # Scalers used in preprocessing
+│   └── nn_standard_scaler.pkl
+│
+├── scripts/                          # Python scripts
+│   ├── preprocess_data.py
+│   └── inference.py
+│
+├── transformers/                     # Fitted preprocessing transformers
+│   ├── nn_yeo_johnson_transformer.pkl
+│   ├── xgb_yeo_johnson_transformer.pkl
+│   └── README.md                     # Documentation for transformers
+│
 ├── predictions/                      # Competition submissions
 │   ├── preds_xgb.csv
-|   ├── preds_nn.csv
-|   ├── preds_logreg.csv
+│   ├── preds_nn.csv
+│   ├── preds_logreg.csv
 │   └── submission_log.md             # Track submission scores
 │
-├── plots/                            # Visualizations
-│   ├── confusion_matrix.png
-│   └── feature_importance.png
+└── README.md                         # Project overview and instructions
+
 ```
