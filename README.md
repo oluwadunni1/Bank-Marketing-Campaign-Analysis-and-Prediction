@@ -84,3 +84,35 @@ bank-marketing-prediction/
 └── README.md                         # Project overview and instructions
 
 ```
+
+## Setup Instructions
+
+1. **Clone the Repository**
+```
+git clone https://github.com/oluwadunni1/Bank-Marketing-Campaign-Analysis-and-Prediction.git
+cd Bank-Marketing-Campaign-Analysis-and-Prediction
+
+```
+2. **Download the dataset**. The dataset is available on [Kaggle](https://www.kaggle.com/competitions/playground-series-s5e8/overview). Download the CSV files (train.csv and test.csv) manually.
+3. **Place the dataset**. Ensure the dataset files are placed in the following folder structure
+```
+    bank-marketing-prediction/
+└── data/
+    └── raw/
+        ├── train.csv
+        └── test.csv
+```
+⚠️ Important: All scripts and notebooks expect the raw data to be located in data/raw/. Using a different location may cause preprocessing or model inference to fail.
+
+4. **Run Notebooks**
+
+After placing the dataset, the notebooks can be executed in the following order:
+
+- Exploratory Data Analysis:
+notebooks/exploratory_data_analysis.ipynb – Review data distributions, relationships, and summary statistics.
+
+- Data Preprocessing:
+notebooks/data_preprocessing.ipynb – Apply feature engineering, encoding, scaling, and split the data for modeling.
+
+- Model Training & Evaluation:
+notebooks/model_training_evaluation.ipynb – Train the models, evaluate performance, and save trained artifacts.
