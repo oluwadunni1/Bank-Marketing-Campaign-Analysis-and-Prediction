@@ -9,7 +9,7 @@ This project analyzes bank marketing campaign data from a Kaggle competition to 
 ## Dataset
 
 - **Source**: [Kaggle - Bank Marketing Dataset](https://www.kaggle.com/competitions/playground-series-s5e8/overview)
-- **Size**: [750,000 records 17 features]
+- **Size**: [750,000 records 18 features]
 
 ##  Results
 
